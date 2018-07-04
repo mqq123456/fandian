@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDSexView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDSexView">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RJ-Pl-hiE">
+                    <rect key="frame" x="0.0" y="0.0" width="173" height="190"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf5-Yq-zwj">
+                    <rect key="frame" x="173" y="0.0" width="173" height="190"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sex_male" translatesAutoresizingMaskIntoConstraints="NO" id="sbI-wL-bQr">
+                    <rect key="frame" x="61" y="49" width="52" height="52"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="男士" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ni-Yq-ptU">
+                    <rect key="frame" x="70" y="119" width="34" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.62745098039215685" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sex_female" translatesAutoresizingMaskIntoConstraints="NO" id="VSm-lb-5ub">
+                    <rect key="frame" x="234" y="49" width="52" height="52"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="女士" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta4-ef-uXo">
+                    <rect key="frame" x="243" y="120" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.38039215686274508" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCC-mq-J9X">
+                    <rect key="frame" x="173" y="62" width="1" height="66"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="66R-06-Lb9"/>
+                        <constraint firstAttribute="width" constant="1" id="U1x-MU-ZCh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1ni-Yq-ptU" firstAttribute="top" secondItem="sbI-wL-bQr" secondAttribute="bottom" constant="18" id="13L-tI-qZe"/>
+                <constraint firstItem="zCC-mq-J9X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4tc-Ll-RiF"/>
+                <constraint firstItem="jf5-Yq-zwj" firstAttribute="width" secondItem="7RJ-Pl-hiE" secondAttribute="width" id="6sV-GE-fhu"/>
+                <constraint firstItem="7RJ-Pl-hiE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9At-qG-pQQ"/>
+                <constraint firstItem="sbI-wL-bQr" firstAttribute="centerY" secondItem="7RJ-Pl-hiE" secondAttribute="centerY" constant="-20" id="9Lm-7N-tmb"/>
+                <constraint firstAttribute="bottom" secondItem="7RJ-Pl-hiE" secondAttribute="bottom" id="Akm-Hu-Enu"/>
+                <constraint firstItem="Ta4-ef-uXo" firstAttribute="centerX" secondItem="jf5-Yq-zwj" secondAttribute="centerX" id="Kyg-0O-bjk"/>
+                <constraint firstItem="sbI-wL-bQr" firstAttribute="centerX" secondItem="7RJ-Pl-hiE" secondAttribute="centerX" id="MrM-FC-gfy"/>
+                <constraint firstItem="zCC-mq-J9X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OhO-1z-haT"/>
+                <constraint firstItem="Ta4-ef-uXo" firstAttribute="centerY" secondItem="1ni-Yq-ptU" secondAttribute="centerY" id="SsX-XV-J90"/>
+                <constraint firstItem="VSm-lb-5ub" firstAttribute="centerX" secondItem="jf5-Yq-zwj" secondAttribute="centerX" id="XjL-55-f8x"/>
+                <constraint firstItem="1ni-Yq-ptU" firstAttribute="centerX" secondItem="7RJ-Pl-hiE" secondAttribute="centerX" id="a8y-Wk-jg1"/>
+                <constraint firstAttribute="bottom" secondItem="jf5-Yq-zwj" secondAttribute="bottom" id="dMl-6J-oXI"/>
+                <constraint firstItem="VSm-lb-5ub" firstAttribute="centerY" secondItem="sbI-wL-bQr" secondAttribute="centerY" id="ezQ-N2-1hk"/>
+                <constraint firstAttribute="trailing" secondItem="jf5-Yq-zwj" secondAttribute="trailing" id="gQN-d3-0YR"/>
+                <constraint firstItem="7RJ-Pl-hiE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oId-1S-ZwE"/>
+                <constraint firstItem="jf5-Yq-zwj" firstAttribute="leading" secondItem="7RJ-Pl-hiE" secondAttribute="trailing" id="qAM-p8-BDc"/>
+                <constraint firstItem="jf5-Yq-zwj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tYe-Z3-Qzz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="manBtn" destination="7RJ-Pl-hiE" id="Irl-Ns-t4J"/>
+                <outlet property="womanBtn" destination="jf5-Yq-zwj" id="OVc-Wx-m2a"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="199"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sex_female" width="52" height="52"/>
+        <image name="sex_male" width="52" height="52"/>
+    </resources>
+</document>

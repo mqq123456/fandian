@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="FDPerfectOccupationCell">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMV-Wf-xO0">
+                        <rect key="frame" x="128" y="0.0" width="212" height="151"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="选择您的职位" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMl-u7-atb">
+                                <rect key="frame" x="28" y="59" width="154" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c0s-6d-Kpo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_ico_shuruzhiwei" translatesAutoresizingMaskIntoConstraints="NO" id="5iq-R4-Vhx">
+                                <rect key="frame" x="5" y="67" width="18" height="18"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zx-Uo-Qf7">
+                                <rect key="frame" x="5" y="88" width="177" height="1"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IB2-Uf-XAY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DMl-u7-atb" secondAttribute="trailing" constant="30" id="0be-v0-F6b"/>
+                            <constraint firstItem="5iq-R4-Vhx" firstAttribute="trailing" secondItem="DMl-u7-atb" secondAttribute="trailing" id="3VS-RZ-rjn"/>
+                            <constraint firstItem="6zx-Uo-Qf7" firstAttribute="leading" secondItem="5iq-R4-Vhx" secondAttribute="leading" id="B3y-0y-j2h"/>
+                            <constraint firstItem="6zx-Uo-Qf7" firstAttribute="trailing" secondItem="DMl-u7-atb" secondAttribute="trailing" id="EgX-fT-ofY"/>
+                            <constraint firstItem="5iq-R4-Vhx" firstAttribute="leading" secondItem="YMV-Wf-xO0" secondAttribute="leading" constant="5" id="P1H-zx-yyG"/>
+                            <constraint firstItem="DMl-u7-atb" firstAttribute="leading" secondItem="5iq-R4-Vhx" secondAttribute="trailing" constant="5" id="Yoa-jw-cBe"/>
+                            <constraint firstItem="6zx-Uo-Qf7" firstAttribute="top" secondItem="5iq-R4-Vhx" secondAttribute="bottom" constant="3" id="dQw-VD-Pr9"/>
+                            <constraint firstItem="DMl-u7-atb" firstAttribute="centerY" secondItem="YMV-Wf-xO0" secondAttribute="centerY" constant="-1" id="ptR-HW-e07"/>
+                            <constraint firstItem="5iq-R4-Vhx" firstAttribute="centerY" secondItem="YMV-Wf-xO0" secondAttribute="centerY" id="uic-L0-Jtt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3VS-RZ-rjn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_img_tianxiezhiwei" translatesAutoresizingMaskIntoConstraints="NO" id="Pxe-yS-aHZ">
+                        <rect key="frame" x="15" y="40" width="71" height="71"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YMV-Wf-xO0" secondAttribute="trailing" id="COn-oY-0S8"/>
+                    <constraint firstItem="YMV-Wf-xO0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:1.6" id="PXN-tK-OVX"/>
+                    <constraint firstItem="Pxe-yS-aHZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gAh-gV-Vqk"/>
+                    <constraint firstItem="Pxe-yS-aHZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lvw-y5-O3O"/>
+                    <constraint firstAttribute="bottom" secondItem="YMV-Wf-xO0" secondAttribute="bottom" id="p33-Fj-wRA"/>
+                    <constraint firstItem="YMV-Wf-xO0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xPR-ib-Th8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="DMl-u7-atb" id="5hI-Ez-2sw"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="315"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="baw_ico_shuruzhiwei" width="18" height="18"/>
+        <image name="baw_img_tianxiezhiwei" width="71" height="71"/>
+    </resources>
+</document>

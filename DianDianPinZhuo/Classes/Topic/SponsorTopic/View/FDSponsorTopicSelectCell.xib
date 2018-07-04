@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="FDSponsorTopicSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bow_ico_djckgd" translatesAutoresizingMaskIntoConstraints="NO" id="9NJ-jJ-mXa">
+                        <rect key="frame" x="425" y="63" width="5" height="9"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="选择餐厅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmZ-zQ-QcE">
+                        <rect key="frame" x="45" y="59" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="五月厨房" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-aU-eLy">
+                        <rect key="frame" x="364" y="59" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_icon_time_nor" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-Bi-Bab">
+                        <rect key="frame" x="15" y="64" width="23" height="23"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVU-w4-7xk">
+                        <rect key="frame" x="45" y="82" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jQ2-Bi-Bab" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3eq-JJ-Vb7"/>
+                    <constraint firstItem="9NJ-jJ-mXa" firstAttribute="leading" secondItem="Y2d-aU-eLy" secondAttribute="trailing" constant="5" id="G3i-Vr-ess"/>
+                    <constraint firstItem="9NJ-jJ-mXa" firstAttribute="centerY" secondItem="GmZ-zQ-QcE" secondAttribute="centerY" id="Mn5-Bd-LR7"/>
+                    <constraint firstItem="tVU-w4-7xk" firstAttribute="top" secondItem="GmZ-zQ-QcE" secondAttribute="bottom" constant="6" id="OFb-lJ-SvT"/>
+                    <constraint firstAttribute="trailing" secondItem="9NJ-jJ-mXa" secondAttribute="trailing" constant="15" id="UY6-WK-24y"/>
+                    <constraint firstItem="Y2d-aU-eLy" firstAttribute="centerY" secondItem="GmZ-zQ-QcE" secondAttribute="centerY" id="VTC-S6-Uas"/>
+                    <constraint firstItem="jQ2-Bi-Bab" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f0k-dG-e8p"/>
+                    <constraint firstItem="GmZ-zQ-QcE" firstAttribute="leading" secondItem="jQ2-Bi-Bab" secondAttribute="trailing" constant="7" id="pcD-AK-XXE"/>
+                    <constraint firstItem="GmZ-zQ-QcE" firstAttribute="top" secondItem="jQ2-Bi-Bab" secondAttribute="top" constant="-5" id="wDA-eX-Hfa"/>
+                    <constraint firstItem="tVU-w4-7xk" firstAttribute="leading" secondItem="GmZ-zQ-QcE" secondAttribute="leading" id="wlF-kb-tBC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desc" destination="tVU-w4-7xk" id="Uls-hT-0Be"/>
+                <outlet property="detail" destination="Y2d-aU-eLy" id="4TX-6N-0uf"/>
+                <outlet property="left_icon" destination="jQ2-Bi-Bab" id="kZl-6c-Aky"/>
+                <outlet property="title" destination="GmZ-zQ-QcE" id="D7X-pP-Zor"/>
+            </connections>
+            <point key="canvasLocation" x="288.5" y="344"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="baw_icon_time_nor" width="23" height="23"/>
+        <image name="bow_ico_djckgd" width="5" height="9"/>
+    </resources>
+</document>

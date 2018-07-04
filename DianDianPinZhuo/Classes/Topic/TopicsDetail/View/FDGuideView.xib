@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDGuideView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDGuideView">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bow_ico_xsyd" translatesAutoresizingMaskIntoConstraints="NO" id="hFv-rR-aMV">
+                    <rect key="frame" x="10" y="82" width="264" height="139"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="joL-e6-sWU">
+                    <rect key="frame" x="12" y="84" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="5XF-5F-uwh"/>
+                        <constraint firstAttribute="height" constant="50" id="cje-Cy-dro"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAs-uG-R52">
+                    <rect key="frame" x="94" y="181" width="180" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="gkN-5W-Vay"/>
+                        <constraint firstAttribute="height" constant="40" id="oDY-zW-gcV"/>
+                    </constraints>
+                    <connections>
+                        <action selector="disBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="GR2-dM-ifP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bAs-uG-R52" firstAttribute="trailing" secondItem="hFv-rR-aMV" secondAttribute="trailing" id="5GM-h6-scx"/>
+                <constraint firstItem="hFv-rR-aMV" firstAttribute="top" secondItem="joL-e6-sWU" secondAttribute="top" constant="-2" id="O18-hT-U2Y"/>
+                <constraint firstItem="hFv-rR-aMV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="82" id="TCO-1d-RiZ"/>
+                <constraint firstItem="bAs-uG-R52" firstAttribute="bottom" secondItem="hFv-rR-aMV" secondAttribute="bottom" id="dpT-Y8-sTO"/>
+                <constraint firstItem="hFv-rR-aMV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="uHN-y4-tfi"/>
+                <constraint firstItem="hFv-rR-aMV" firstAttribute="leading" secondItem="joL-e6-sWU" secondAttribute="leading" constant="-2" id="wtC-Od-otM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backH" destination="TCO-1d-RiZ" id="FVp-tn-UWf"/>
+                <outlet property="backLeft" destination="uHN-y4-tfi" id="rRv-xk-Eco"/>
+                <outlet property="disBtn" destination="bAs-uG-R52" id="jBQ-1I-oUh"/>
+                <outlet property="iconH" destination="cje-Cy-dro" id="zVV-hr-Wy0"/>
+                <outlet property="iconLeft" destination="wtC-Od-otM" id="GDr-2J-sd0"/>
+                <outlet property="iconTop" destination="O18-hT-U2Y" id="Wid-X8-x76"/>
+                <outlet property="iconW" destination="5XF-5F-uwh" id="CPu-qz-bVk"/>
+                <outlet property="people_icon" destination="joL-e6-sWU" id="IBm-CD-ti3"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bow_ico_xsyd" width="264" height="139"/>
+        <image name="placeholder" width="69" height="69"/>
+    </resources>
+</document>

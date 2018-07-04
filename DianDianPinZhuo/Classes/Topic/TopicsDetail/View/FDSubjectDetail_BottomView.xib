@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDSubjectDetail_BottomView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDSubjectDetail_BottomView">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQe-8O-bXa">
+                    <rect key="frame" x="34" y="23" width="134" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1M0-s1-ErI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="回复" backgroundImage="bow_btn_wyyd_nor">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R68-CF-9QQ">
+                    <rect key="frame" x="226" y="23" width="122" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5X1-Vf-tBa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="与TA同桌" backgroundImage="bow_btn_wyyd_nor">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R68-CF-9QQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="1Sg-j2-IsM"/>
+                <constraint firstItem="iQe-8O-bXa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="3bW-Qw-cFe"/>
+                <constraint firstItem="R68-CF-9QQ" firstAttribute="leading" secondItem="iQe-8O-bXa" secondAttribute="trailing" constant="58" id="5L7-di-4u2"/>
+                <constraint firstItem="iQe-8O-bXa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="34" id="5xH-Oc-mu8"/>
+                <constraint firstAttribute="trailing" secondItem="R68-CF-9QQ" secondAttribute="trailing" constant="34" id="ngg-FW-coL"/>
+                <constraint firstItem="R68-CF-9QQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="3/2" id="z4d-Ld-8wE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="joininBtn" destination="R68-CF-9QQ" id="6aB-Yt-jhu"/>
+                <outlet property="replayBtn" destination="iQe-8O-bXa" id="VQc-Hi-Zkk"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="-384.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bow_btn_wyyd_nor" width="117" height="45"/>
+    </resources>
+</document>

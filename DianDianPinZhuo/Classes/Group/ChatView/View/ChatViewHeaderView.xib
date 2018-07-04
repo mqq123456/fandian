@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewHeaderView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatViewHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群组成员" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glt-8P-Gdp">
+                    <rect key="frame" x="14" y="18" width="72" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-xQ-Mgg">
+                    <rect key="frame" x="14" y="46" width="44" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_ico_arrows_nor" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-HI-E7F">
+                    <rect key="frame" x="410" y="34" width="5" height="10"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tRJ-7f-cOS" customClass="FDHeadImageView">
+                    <rect key="frame" x="370" y="23" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="CDb-hM-ete"/>
+                        <constraint firstAttribute="width" constant="32" id="vOR-OM-QWf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-7c-JxM" customClass="FDHeadImageView">
+                    <rect key="frame" x="331" y="23" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="BsU-Ve-Jk5"/>
+                        <constraint firstAttribute="height" constant="32" id="C4T-2R-R8s"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qnh-dk-L03" customClass="FDHeadImageView">
+                    <rect key="frame" x="292" y="23" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="Mpo-hF-5pb"/>
+                        <constraint firstAttribute="height" constant="32" id="gdp-KY-Mub"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="S2h-Gc-iQN" customClass="FDHeadImageView">
+                    <rect key="frame" x="253" y="23" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="AfW-eM-mMx"/>
+                        <constraint firstAttribute="width" constant="32" id="coL-KY-n1K"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tRJ-7f-cOS" secondAttribute="trailing" constant="23" id="9aV-dF-lbk"/>
+                <constraint firstItem="qnh-dk-L03" firstAttribute="leading" secondItem="S2h-Gc-iQN" secondAttribute="trailing" constant="7" id="Gma-6Y-loZ"/>
+                <constraint firstItem="Glt-8P-Gdp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="IxK-wk-yYs"/>
+                <constraint firstItem="SIn-xQ-Mgg" firstAttribute="top" secondItem="Glt-8P-Gdp" secondAttribute="bottom" constant="5" id="Kuf-N2-zT8"/>
+                <constraint firstItem="S2h-Gc-iQN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Qi4-EW-iSf"/>
+                <constraint firstItem="SIn-xQ-Mgg" firstAttribute="leading" secondItem="Glt-8P-Gdp" secondAttribute="leading" id="R8K-1m-HCx"/>
+                <constraint firstItem="tRJ-7f-cOS" firstAttribute="leading" secondItem="tHI-7c-JxM" secondAttribute="trailing" constant="7" id="WyL-Mk-APw"/>
+                <constraint firstItem="qnh-dk-L03" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ahG-K8-qFh"/>
+                <constraint firstItem="tHI-7c-JxM" firstAttribute="leading" secondItem="qnh-dk-L03" secondAttribute="trailing" constant="7" id="bgP-xu-Od7"/>
+                <constraint firstItem="7jK-HI-E7F" firstAttribute="leading" secondItem="tRJ-7f-cOS" secondAttribute="trailing" constant="23" id="cHj-p2-pE6"/>
+                <constraint firstItem="Glt-8P-Gdp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="f1d-u3-PxN"/>
+                <constraint firstAttribute="trailing" secondItem="7jK-HI-E7F" secondAttribute="trailing" constant="10" id="qlS-eg-0Q4"/>
+                <constraint firstItem="tRJ-7f-cOS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="r5O-aP-RFn"/>
+                <constraint firstItem="7jK-HI-E7F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tHi-WR-xu1"/>
+                <constraint firstItem="tHI-7c-JxM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wXb-qi-Uyc"/>
+                <constraint firstItem="Glt-8P-Gdp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-10" id="x12-gz-dlX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="IxK-wk-yYs"/>
+                    <exclude reference="cHj-p2-pE6"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="head1" destination="tRJ-7f-cOS" id="mcR-qi-tE5"/>
+                <outlet property="head2" destination="tHI-7c-JxM" id="6LK-3f-rEb"/>
+                <outlet property="head3" destination="qnh-dk-L03" id="iIZ-3h-2iK"/>
+                <outlet property="head4" destination="S2h-Gc-iQN" id="fuJ-0L-dFS"/>
+                <outlet property="totalPeople" destination="SIn-xQ-Mgg" id="pQb-L3-Phn"/>
+            </connections>
+            <point key="canvasLocation" x="191.5" y="106.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message_ico_arrows_nor" width="5" height="10"/>
+        <image name="placeholder" width="69" height="69"/>
+    </resources>
+</document>

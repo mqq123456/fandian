@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDConfigFooterView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDConfigFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="405"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-6d-BNA">
+                    <rect key="frame" x="0.0" y="325" width="326" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2016 Fundot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8w-Pt-jWp">
+                            <rect key="frame" x="88" y="45" width="151" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京饭点科技有限公司" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0D-CC-aj4">
+                            <rect key="frame" x="103" y="25" width="120" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="BEO-1K-tc3"/>
+                        <constraint firstItem="l0D-CC-aj4" firstAttribute="centerX" secondItem="bmi-6d-BNA" secondAttribute="centerX" id="DnW-pI-ImX"/>
+                        <constraint firstItem="q8w-Pt-jWp" firstAttribute="centerX" secondItem="bmi-6d-BNA" secondAttribute="centerX" id="hKt-LN-kFF"/>
+                        <constraint firstItem="q8w-Pt-jWp" firstAttribute="top" secondItem="l0D-CC-aj4" secondAttribute="bottom" constant="5" id="mtF-1L-E7N"/>
+                        <constraint firstAttribute="bottom" secondItem="q8w-Pt-jWp" secondAttribute="bottom" constant="20" id="yco-pY-Tqs"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-9M-job">
+                    <rect key="frame" x="41" y="60" width="245" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="JyS-zF-0Yj"/>
+                        <constraint firstAttribute="width" constant="245" id="mMS-sg-52g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-4" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="退出登录" backgroundImage="bow_btn_tcdl_nor">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="L9C-9M-job" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="7yq-6d-bhp"/>
+                <constraint firstAttribute="trailing" secondItem="bmi-6d-BNA" secondAttribute="trailing" id="CPP-E5-d9j"/>
+                <constraint firstItem="L9C-9M-job" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HC4-ug-jvX"/>
+                <constraint firstItem="bmi-6d-BNA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ORu-Gs-lWJ"/>
+                <constraint firstAttribute="bottom" secondItem="bmi-6d-BNA" secondAttribute="bottom" id="Vwn-y1-Yeq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="quitBtn" destination="L9C-9M-job" id="gnr-b4-KAC"/>
+                <outlet property="quitBtnTop" destination="7yq-6d-bhp" id="4SV-BE-N0W"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="297.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bow_btn_tcdl_nor" width="223" height="56"/>
+    </resources>
+</document>

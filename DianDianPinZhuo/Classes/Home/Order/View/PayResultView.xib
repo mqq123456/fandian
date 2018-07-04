@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayResultView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayResultView">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="293"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击确认查看就餐凭证" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-XX-U0Y">
+                    <rect key="frame" x="118" y="122" width="160" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO6-Hn-pPt">
+                    <rect key="frame" x="148" y="72" width="100" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvB-wA-4DX">
+                    <rect key="frame" x="30" y="177" width="336" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.15686274510000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4ne-cL-kuQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.93725490196078431" green="0.15686274509803921" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="f8C-XX-U0Y" secondAttribute="centerX" id="7rM-jd-2ki"/>
+                <constraint firstAttribute="centerX" secondItem="YO6-Hn-pPt" secondAttribute="centerX" id="9s6-S5-8Lc"/>
+                <constraint firstItem="pvB-wA-4DX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="D8x-EG-SBc"/>
+                <constraint firstAttribute="centerY" secondItem="f8C-XX-U0Y" secondAttribute="centerY" constant="15" id="MXQ-bJ-UbO"/>
+                <constraint firstAttribute="trailing" secondItem="pvB-wA-4DX" secondAttribute="trailing" constant="30" id="Nd5-UJ-e1z"/>
+                <constraint firstItem="pvB-wA-4DX" firstAttribute="top" secondItem="f8C-XX-U0Y" secondAttribute="bottom" constant="35" id="klS-nH-GBO"/>
+                <constraint firstAttribute="centerX" secondItem="pvB-wA-4DX" secondAttribute="centerX" id="knb-iG-dYh"/>
+                <constraint firstItem="f8C-XX-U0Y" firstAttribute="top" secondItem="YO6-Hn-pPt" secondAttribute="bottom" constant="20" id="wjg-Pd-WfR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detail" destination="f8C-XX-U0Y" id="RWD-9n-nDT"/>
+                <outlet property="doneBtn" destination="pvB-wA-4DX" id="NoF-qb-G13"/>
+                <outlet property="title" destination="YO6-Hn-pPt" id="qCO-mD-QJl"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="204.5"/>
+        </view>
+    </objects>
+</document>

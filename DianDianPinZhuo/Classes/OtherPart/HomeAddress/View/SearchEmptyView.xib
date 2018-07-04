@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchEmptyView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="436"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwN-W9-MA0">
+                    <rect key="frame" x="201" y="134" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_ attention" translatesAutoresizingMaskIntoConstraints="NO" id="mba-zZ-7P3">
+                    <rect key="frame" x="163" y="70" width="77" height="49"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="的信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjD-yy-864">
+                    <rect key="frame" x="206" y="124" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索不到" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlE-be-CSn">
+                    <rect key="frame" x="128" y="124" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RjD-yy-864" firstAttribute="leading" secondItem="IwN-W9-MA0" secondAttribute="trailing" constant="5" id="4d2-Pp-kNP"/>
+                <constraint firstItem="FlE-be-CSn" firstAttribute="centerY" secondItem="IwN-W9-MA0" secondAttribute="centerY" id="Cal-kr-gSs"/>
+                <constraint firstAttribute="centerX" secondItem="IwN-W9-MA0" secondAttribute="centerX" id="Dp1-zt-5e2"/>
+                <constraint firstAttribute="centerX" secondItem="mba-zZ-7P3" secondAttribute="centerX" id="HiZ-qA-h8t"/>
+                <constraint firstItem="mba-zZ-7P3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="X5n-m3-6EI"/>
+                <constraint firstItem="IwN-W9-MA0" firstAttribute="top" secondItem="mba-zZ-7P3" secondAttribute="bottom" constant="15" id="Yes-7i-ToZ"/>
+                <constraint firstItem="IwN-W9-MA0" firstAttribute="leading" secondItem="FlE-be-CSn" secondAttribute="trailing" constant="5" id="mGI-Pr-kcK"/>
+                <constraint firstItem="FlE-be-CSn" firstAttribute="centerY" secondItem="RjD-yy-864" secondAttribute="centerY" id="wbd-n3-2V8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="title" destination="IwN-W9-MA0" id="TM9-EV-PZG"/>
+            </connections>
+            <point key="canvasLocation" x="290" y="165"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_ attention" width="77" height="49"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FDInvocieCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开票金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-xG-7Wh">
+                        <rect key="frame" x="15" y="11" width="85" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="3rV-X1-IQm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="发票金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3P8-3B-Bz5">
+                        <rect key="frame" x="100" y="3" width="210" height="39"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOz-78-h00">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Y4T-4B-211"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_icon_font-fanhui" translatesAutoresizingMaskIntoConstraints="NO" id="ocL-BH-E0z">
+                        <rect key="frame" x="300" y="17" width="5" height="9"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3P8-3B-Bz5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="31G-ms-vDr"/>
+                    <constraint firstAttribute="trailing" secondItem="kOz-78-h00" secondAttribute="trailing" id="Gii-bZ-1VE"/>
+                    <constraint firstItem="fZu-xG-7Wh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jwf-94-J1R"/>
+                    <constraint firstAttribute="bottom" secondItem="kOz-78-h00" secondAttribute="bottom" id="MkB-B8-bsv"/>
+                    <constraint firstItem="kOz-78-h00" firstAttribute="top" secondItem="3P8-3B-Bz5" secondAttribute="bottom" id="XBk-Eo-0Ox"/>
+                    <constraint firstItem="ocL-BH-E0z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZPl-80-Npi"/>
+                    <constraint firstItem="3P8-3B-Bz5" firstAttribute="leading" secondItem="fZu-xG-7Wh" secondAttribute="trailing" id="dVn-kA-0gp"/>
+                    <constraint firstItem="fZu-xG-7Wh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uST-sH-TDM"/>
+                    <constraint firstItem="kOz-78-h00" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wde-v4-UEu"/>
+                    <constraint firstAttribute="trailing" secondItem="ocL-BH-E0z" secondAttribute="trailing" constant="15" id="yV7-kF-0bo"/>
+                    <constraint firstAttribute="trailing" secondItem="3P8-3B-Bz5" secondAttribute="trailing" constant="10" id="yxP-Cp-ZOy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="arrowView" destination="ocL-BH-E0z" id="4HU-kb-8cT"/>
+                <outlet property="inputTextfiled" destination="3P8-3B-Bz5" id="1Oo-Hb-3LR"/>
+                <outlet property="leftTitle" destination="fZu-xG-7Wh" id="7HC-cC-iYx"/>
+                <outlet property="lineView" destination="kOz-78-h00" id="MB1-bP-k4H"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="196"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="order_icon_font-fanhui" width="5" height="9"/>
+    </resources>
+</document>

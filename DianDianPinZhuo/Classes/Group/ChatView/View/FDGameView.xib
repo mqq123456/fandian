@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDGameView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDGameView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nh2-ne-59O">
+                    <rect key="frame" x="13" y="146" width="574" height="308"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bow_img_kaifazhong_nor" translatesAutoresizingMaskIntoConstraints="NO" id="WIx-Of-uUj">
+                            <rect key="frame" x="139" y="30" width="291" height="178"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="178" id="ASJ-d0-izY"/>
+                                <constraint firstAttribute="width" constant="291" id="NnM-Cb-Ebb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87U-xj-2x1">
+                            <rect key="frame" x="162" y="240" width="250" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="4Eu-Cq-rO1"/>
+                                <constraint firstAttribute="width" constant="250" id="RVI-UJ-Hl8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
+                            <state key="normal" title="我知道了" backgroundImage="baw_btn_jihuoyhm_nor">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="know_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="Y8a-UK-miZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="87U-xj-2x1" firstAttribute="centerX" secondItem="nh2-ne-59O" secondAttribute="centerX" id="VOA-4i-p7Q"/>
+                        <constraint firstAttribute="height" constant="308" id="XSg-NP-D9J"/>
+                        <constraint firstAttribute="bottom" secondItem="87U-xj-2x1" secondAttribute="bottom" constant="8" id="Z0u-kA-q3P"/>
+                        <constraint firstItem="WIx-Of-uUj" firstAttribute="top" secondItem="nh2-ne-59O" secondAttribute="top" constant="30" id="kxa-Ua-KLk"/>
+                        <constraint firstItem="WIx-Of-uUj" firstAttribute="centerX" secondItem="nh2-ne-59O" secondAttribute="centerX" id="pL4-fm-4Mw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nh2-ne-59O" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GDU-AS-14e"/>
+                <constraint firstItem="nh2-ne-59O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="eqp-0f-T1Y"/>
+                <constraint firstAttribute="trailing" secondItem="nh2-ne-59O" secondAttribute="trailing" constant="13" id="v5H-2M-tid"/>
+                <constraint firstItem="nh2-ne-59O" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vi0-Ib-ohv"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="nh2-ne-59O" id="srN-5S-12a"/>
+            </connections>
+            <point key="canvasLocation" x="452" y="274"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baw_btn_jihuoyhm_nor" width="348" height="53"/>
+        <image name="bow_img_kaifazhong_nor" width="291" height="178"/>
+    </resources>
+</document>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="298" id="KGk-i7-Jjw" customClass="FDEvaluationCell4">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="298"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="297"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HEG-ge-hMy" customClass="HQTextView">
+                        <rect key="frame" x="10" y="10" width="311" height="180"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="ked-BB-qLV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Am-Z1-EaR">
+                        <rect key="frame" x="191" y="130" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="CZc-DG-QY4"/>
+                            <constraint firstAttribute="height" constant="60" id="wHC-jR-zyO"/>
+                        </constraints>
+                        <state key="normal" image="bow_ico_pszp"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqH-df-kgd">
+                        <rect key="frame" x="236" y="130" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="4z5-Dn-Io6"/>
+                            <constraint firstAttribute="height" constant="15" id="FUi-wH-ff9"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="bow_ico_gban"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNK-B0-PWg">
+                        <rect key="frame" x="121" y="130" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="GmR-7e-asA"/>
+                            <constraint firstAttribute="height" constant="60" id="WkL-qj-Bvi"/>
+                        </constraints>
+                        <state key="normal" image="bow_ico_pszp"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVr-bB-urZ">
+                        <rect key="frame" x="166" y="130" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="EU2-Rx-uDe"/>
+                            <constraint firstAttribute="width" constant="15" id="x54-65-vCP"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="bow_ico_gban"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoD-UX-ACO">
+                        <rect key="frame" x="50" y="210" width="231" height="44"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.14901960784313725" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="9y2-Iu-PHo"/>
+                            <constraint firstAttribute="height" constant="44" id="oya-gl-Unt"/>
+                        </constraints>
+                        <state key="normal" title="提交评价">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9y2-Iu-PHo"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAj-qu-os5">
+                        <rect key="frame" x="261" y="130" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="xof-D4-fPW"/>
+                            <constraint firstAttribute="width" constant="60" id="yf1-q9-TcZ"/>
+                        </constraints>
+                        <state key="normal" image="bow_ico_pszp"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99B-M1-Il0">
+                        <rect key="frame" x="306" y="130" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="DgD-bu-OvZ"/>
+                            <constraint firstAttribute="height" constant="15" id="pou-6c-Dv6"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="bow_ico_gban"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gAj-qu-os5" firstAttribute="leading" secondItem="6Am-Z1-EaR" secondAttribute="trailing" constant="10" id="2m4-ic-EYn"/>
+                    <constraint firstItem="FqH-df-kgd" firstAttribute="trailing" secondItem="6Am-Z1-EaR" secondAttribute="trailing" id="3d1-NQ-dfc"/>
+                    <constraint firstItem="99B-M1-Il0" firstAttribute="trailing" secondItem="gAj-qu-os5" secondAttribute="trailing" id="5Np-hE-MtE"/>
+                    <constraint firstItem="CoD-UX-ACO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6jC-Eo-6ui"/>
+                    <constraint firstItem="6Am-Z1-EaR" firstAttribute="leading" secondItem="zNK-B0-PWg" secondAttribute="trailing" constant="10" id="AfX-dl-gU7"/>
+                    <constraint firstItem="HEG-ge-hMy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BRc-ai-tS2"/>
+                    <constraint firstItem="99B-M1-Il0" firstAttribute="top" secondItem="gAj-qu-os5" secondAttribute="top" id="EdA-Ph-hXn"/>
+                    <constraint firstItem="NVr-bB-urZ" firstAttribute="top" secondItem="zNK-B0-PWg" secondAttribute="top" id="Je8-Ur-GBY"/>
+                    <constraint firstItem="zNK-B0-PWg" firstAttribute="bottom" secondItem="HEG-ge-hMy" secondAttribute="bottom" id="KM1-Ug-qJk"/>
+                    <constraint firstItem="CoD-UX-ACO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="OxR-wS-wne"/>
+                    <constraint firstItem="NVr-bB-urZ" firstAttribute="trailing" secondItem="zNK-B0-PWg" secondAttribute="trailing" id="SQC-hR-DSC"/>
+                    <constraint firstItem="FqH-df-kgd" firstAttribute="top" secondItem="6Am-Z1-EaR" secondAttribute="top" id="SW9-fI-hDm"/>
+                    <constraint firstItem="FqH-df-kgd" firstAttribute="trailing" secondItem="6Am-Z1-EaR" secondAttribute="trailing" id="bsl-1q-AXZ"/>
+                    <constraint firstItem="NVr-bB-urZ" firstAttribute="trailing" secondItem="zNK-B0-PWg" secondAttribute="trailing" id="e0j-td-MDb"/>
+                    <constraint firstItem="gAj-qu-os5" firstAttribute="trailing" secondItem="HEG-ge-hMy" secondAttribute="trailing" id="jVK-7O-AC8"/>
+                    <constraint firstItem="CoD-UX-ACO" firstAttribute="top" secondItem="HEG-ge-hMy" secondAttribute="bottom" constant="20" id="lek-ou-h3L"/>
+                    <constraint firstItem="99B-M1-Il0" firstAttribute="trailing" secondItem="gAj-qu-os5" secondAttribute="trailing" id="lqc-ow-AKO"/>
+                    <constraint firstItem="6Am-Z1-EaR" firstAttribute="bottom" secondItem="HEG-ge-hMy" secondAttribute="bottom" id="o03-mZ-7g4"/>
+                    <constraint firstAttribute="trailing" secondItem="HEG-ge-hMy" secondAttribute="trailing" constant="10" id="pa9-TS-mth"/>
+                    <constraint firstAttribute="trailing" secondItem="CoD-UX-ACO" secondAttribute="trailing" constant="50" id="rJx-eN-xsm"/>
+                    <constraint firstItem="HEG-ge-hMy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tNf-yn-YxM"/>
+                    <constraint firstItem="gAj-qu-os5" firstAttribute="bottom" secondItem="HEG-ge-hMy" secondAttribute="bottom" id="ufL-ZX-8aY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cancelBtn1" destination="99B-M1-Il0" id="b5q-5O-TuT"/>
+                <outlet property="cancelBtn2" destination="FqH-df-kgd" id="mvR-fu-AVf"/>
+                <outlet property="cancelBtn3" destination="NVr-bB-urZ" id="GaH-tN-63p"/>
+                <outlet property="imgBtn1" destination="gAj-qu-os5" id="VYZ-jh-Uug"/>
+                <outlet property="imgBtn2" destination="6Am-Z1-EaR" id="D86-d7-zoK"/>
+                <outlet property="imgBtn3" destination="zNK-B0-PWg" id="hap-9i-R4c"/>
+                <outlet property="proposalTextView" destination="HEG-ge-hMy" id="3Us-si-F9G"/>
+                <outlet property="submitBtn" destination="CoD-UX-ACO" id="YWS-qd-Q4w"/>
+            </connections>
+            <point key="canvasLocation" x="317.5" y="422"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bow_ico_gban" width="9" height="9"/>
+        <image name="bow_ico_pszp" width="30" height="23"/>
+    </resources>
+</document>

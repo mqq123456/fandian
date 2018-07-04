@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDShareView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDShareView">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="482"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zw-5H-eyy">
+                    <rect key="frame" x="0.0" y="422" width="369" height="5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="gjj-zh-qIO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHg-CA-vv1">
+                    <rect key="frame" x="0.0" y="427" width="369" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="owH-ux-fHy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nk0-zy-ajE"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjg-7V-EBI">
+                    <rect key="frame" x="0.0" y="322" width="369" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-rb-Tza">
+                            <rect key="frame" x="21" y="0.0" width="106" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="2H7-EN-gBZ"/>
+                            </constraints>
+                            <connections>
+                                <action selector="weChatClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="fiG-VK-bRl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-JP-YX7">
+                            <rect key="frame" x="132" y="0.0" width="105" height="100"/>
+                            <connections>
+                                <action selector="weChatBtncircleFriendClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8c1-dH-LCo"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bow_ico_wx" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-1j-Bxw">
+                            <rect key="frame" x="55" y="21" width="38" height="38"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsK-xG-qht">
+                            <rect key="frame" x="46" y="67" width="56" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bow_ico_pyq" translatesAutoresizingMaskIntoConstraints="NO" id="7bk-c2-uUV">
+                            <rect key="frame" x="165" y="21" width="38" height="38"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH6-60-GAp">
+                            <rect key="frame" x="163" y="67" width="42" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTn-T1-3V8">
+                            <rect key="frame" x="242" y="0.0" width="106" height="100"/>
+                            <connections>
+                                <action selector="fandianGroupBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BeO-4y-0lm"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="饭点群组" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3o-G3-b1v">
+                            <rect key="frame" x="267" y="67" width="56" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_img_fdlogo_nor" translatesAutoresizingMaskIntoConstraints="NO" id="5TD-qy-6Us">
+                            <rect key="frame" x="276" y="21" width="39" height="39"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gh5-1j-Bxw" firstAttribute="centerX" secondItem="zDV-rb-Tza" secondAttribute="centerX" id="4L8-3b-Td0"/>
+                        <constraint firstItem="oLy-JP-YX7" firstAttribute="height" secondItem="zDV-rb-Tza" secondAttribute="height" id="5vo-R6-O66"/>
+                        <constraint firstItem="5TD-qy-6Us" firstAttribute="centerX" secondItem="qTn-T1-3V8" secondAttribute="centerX" id="8aL-x7-WbR"/>
+                        <constraint firstItem="oLy-JP-YX7" firstAttribute="centerY" secondItem="rjg-7V-EBI" secondAttribute="centerY" id="Aeo-wU-A5o"/>
+                        <constraint firstItem="iH6-60-GAp" firstAttribute="top" secondItem="tsK-xG-qht" secondAttribute="top" id="FXd-Sm-Esd"/>
+                        <constraint firstItem="tsK-xG-qht" firstAttribute="top" secondItem="gh5-1j-Bxw" secondAttribute="bottom" constant="8" id="Hgi-1Q-DLN"/>
+                        <constraint firstItem="gh5-1j-Bxw" firstAttribute="centerY" secondItem="zDV-rb-Tza" secondAttribute="centerY" constant="-10" id="KRa-Cu-XIN"/>
+                        <constraint firstItem="P3o-G3-b1v" firstAttribute="top" secondItem="tsK-xG-qht" secondAttribute="top" id="L7u-u2-f1b"/>
+                        <constraint firstItem="5TD-qy-6Us" firstAttribute="top" secondItem="gh5-1j-Bxw" secondAttribute="top" id="SUd-WW-wHb"/>
+                        <constraint firstAttribute="height" constant="100" id="WEa-zC-7J4"/>
+                        <constraint firstItem="qTn-T1-3V8" firstAttribute="width" secondItem="zDV-rb-Tza" secondAttribute="width" id="YF3-wn-5n2"/>
+                        <constraint firstItem="qTn-T1-3V8" firstAttribute="centerY" secondItem="rjg-7V-EBI" secondAttribute="centerY" id="c5J-sF-nOb"/>
+                        <constraint firstItem="oLy-JP-YX7" firstAttribute="width" secondItem="zDV-rb-Tza" secondAttribute="width" id="f8n-WR-0Jd"/>
+                        <constraint firstItem="zDV-rb-Tza" firstAttribute="leading" secondItem="rjg-7V-EBI" secondAttribute="leading" constant="21" id="gXE-vH-WLy"/>
+                        <constraint firstItem="qTn-T1-3V8" firstAttribute="height" secondItem="zDV-rb-Tza" secondAttribute="height" id="k8N-gf-E4w"/>
+                        <constraint firstItem="iH6-60-GAp" firstAttribute="centerX" secondItem="7bk-c2-uUV" secondAttribute="centerX" id="kE0-Ob-b0t"/>
+                        <constraint firstItem="7bk-c2-uUV" firstAttribute="centerX" secondItem="oLy-JP-YX7" secondAttribute="centerX" id="lq0-Ef-8h4"/>
+                        <constraint firstItem="zDV-rb-Tza" firstAttribute="centerY" secondItem="rjg-7V-EBI" secondAttribute="centerY" id="mIc-Vh-P8Z"/>
+                        <constraint firstItem="P3o-G3-b1v" firstAttribute="centerX" secondItem="qTn-T1-3V8" secondAttribute="centerX" id="og1-XH-PgL"/>
+                        <constraint firstAttribute="trailing" secondItem="qTn-T1-3V8" secondAttribute="trailing" constant="21" id="vTx-Cr-nm0"/>
+                        <constraint firstItem="5TD-qy-6Us" firstAttribute="top" secondItem="gh5-1j-Bxw" secondAttribute="top" id="xUM-MS-EJY"/>
+                        <constraint firstItem="tsK-xG-qht" firstAttribute="centerX" secondItem="gh5-1j-Bxw" secondAttribute="centerX" id="xvZ-hF-xq6"/>
+                        <constraint firstItem="7bk-c2-uUV" firstAttribute="top" secondItem="gh5-1j-Bxw" secondAttribute="top" id="xwv-0W-Jq1"/>
+                        <constraint firstItem="qTn-T1-3V8" firstAttribute="leading" secondItem="oLy-JP-YX7" secondAttribute="trailing" constant="5" id="yA0-MH-m90"/>
+                        <constraint firstItem="oLy-JP-YX7" firstAttribute="leading" secondItem="zDV-rb-Tza" secondAttribute="trailing" constant="5" id="yyv-i7-Atg"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xUM-MS-EJY"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4Zw-5H-eyy" secondAttribute="trailing" id="BEx-d8-Yav"/>
+                <constraint firstAttribute="trailing" secondItem="FHg-CA-vv1" secondAttribute="trailing" id="DqK-mc-Kqp"/>
+                <constraint firstItem="FHg-CA-vv1" firstAttribute="top" secondItem="4Zw-5H-eyy" secondAttribute="bottom" id="M6a-FZ-imO"/>
+                <constraint firstItem="rjg-7V-EBI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SMo-Ka-3P6"/>
+                <constraint firstAttribute="trailing" secondItem="rjg-7V-EBI" secondAttribute="trailing" id="VbC-79-0DS"/>
+                <constraint firstItem="4Zw-5H-eyy" firstAttribute="top" secondItem="rjg-7V-EBI" secondAttribute="bottom" id="cz7-7T-y0r"/>
+                <constraint firstItem="FHg-CA-vv1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="faW-jw-CpP"/>
+                <constraint firstItem="4Zw-5H-eyy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="o7L-5W-dv1"/>
+                <constraint firstAttribute="bottom" secondItem="FHg-CA-vv1" secondAttribute="bottom" id="tl6-8G-Pz0"/>
+                <constraint firstItem="rjg-7V-EBI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wCZ-pY-D1N"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wCZ-pY-D1N"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancleBtn" destination="FHg-CA-vv1" id="QjK-TZ-dce"/>
+                <outlet property="circleFriendBtn" destination="oLy-JP-YX7" id="5MB-cT-9NF"/>
+                <outlet property="fandianGroup" destination="qTn-T1-3V8" id="bgl-Xo-SgT"/>
+                <outlet property="weChatBtn" destination="zDV-rb-Tza" id="RqF-iW-aFk"/>
+            </connections>
+            <point key="canvasLocation" x="336.5" y="27"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baw_img_fdlogo_nor" width="39" height="39"/>
+        <image name="bow_ico_pyq" width="38" height="38"/>
+        <image name="bow_ico_wx" width="38" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDRedBagView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDRedBagView">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="438"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你获得10个红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ziq-y4-OPD">
+                    <rect key="frame" x="82" y="211" width="248" height="33"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-yj-sNk">
+                    <rect key="frame" x="30" y="384" width="352" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="给我红包也不要">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="金额全凭人品，可用于支付饭点餐费！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mut-64-Ptf">
+                    <rect key="frame" x="62" y="288" width="288" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEA-Cz-VD8">
+                    <rect key="frame" x="30" y="328" width="352" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.81568627449999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="zUa-XL-dlD"/>
+                    </constraints>
+                    <state key="normal" title="发红包给微信好友"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享红包，和好友一起抢吧!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="her-3F-Mie">
+                    <rect key="frame" x="108" y="264" width="197" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="v2f-Al-SqE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="v2f-Al-SqE"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_img_hb" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-7f-3j0">
+                    <rect key="frame" x="136" y="30" width="140" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="h4k-0l-AQ4"/>
+                        <constraint firstAttribute="width" constant="140" id="nEF-Ux-yXY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mut-64-Ptf" firstAttribute="top" secondItem="her-3F-Mie" secondAttribute="bottom" constant="4" id="0EY-04-bzJ"/>
+                <constraint firstItem="mEA-Cz-VD8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="5e7-sb-5Bn"/>
+                <constraint firstAttribute="trailing" secondItem="cxo-yj-sNk" secondAttribute="trailing" constant="30" id="5zU-0m-b7f"/>
+                <constraint firstItem="Mut-64-Ptf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DBJ-JS-YZy"/>
+                <constraint firstItem="zSm-7f-3j0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="J9Z-YK-8FG"/>
+                <constraint firstItem="her-3F-Mie" firstAttribute="top" secondItem="Ziq-y4-OPD" secondAttribute="bottom" constant="20" id="Qst-NE-DIQ"/>
+                <constraint firstItem="her-3F-Mie" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WR9-UY-l3E"/>
+                <constraint firstItem="cxo-yj-sNk" firstAttribute="top" secondItem="mEA-Cz-VD8" secondAttribute="bottom" constant="20" id="Yzy-mD-bKu"/>
+                <constraint firstItem="cxo-yj-sNk" firstAttribute="leading" secondItem="mEA-Cz-VD8" secondAttribute="leading" id="cmx-Gz-ETW"/>
+                <constraint firstItem="cxo-yj-sNk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="fn2-r4-ti0"/>
+                <constraint firstAttribute="bottom" secondItem="cxo-yj-sNk" secondAttribute="bottom" constant="20" id="gA5-52-Jd5"/>
+                <constraint firstItem="mEA-Cz-VD8" firstAttribute="top" secondItem="Mut-64-Ptf" secondAttribute="bottom" constant="20" id="pmp-0K-6bW"/>
+                <constraint firstAttribute="trailing" secondItem="mEA-Cz-VD8" secondAttribute="trailing" constant="30" id="uH6-Ug-v58"/>
+                <constraint firstItem="zSm-7f-3j0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="vTx-yA-U96"/>
+                <constraint firstItem="Ziq-y4-OPD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vs9-Qj-Nid"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="357" y="137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baw_img_hb" width="119" height="105"/>
+    </resources>
+</document>

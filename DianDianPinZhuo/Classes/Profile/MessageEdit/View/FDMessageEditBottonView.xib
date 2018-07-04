@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDMessageEditBottonView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDMessageEditBottonView">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hg-pq-Jrj">
+                    <rect key="frame" x="0.0" y="0.0" width="362" height="38"/>
+                    <state key="normal" image="message_ico_trash"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ME-V5-JZd">
+                    <rect key="frame" x="362" y="0.0" width="70" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4z-p1-LF6">
+                    <rect key="frame" x="362" y="0.0" width="70" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="message_btn_check_nor"/>
+                    <state key="selected" image="message_btn_check_dis"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="c4z-p1-LF6" secondAttribute="trailing" id="4zH-de-LSk"/>
+                <constraint firstAttribute="trailing" secondItem="8ME-V5-JZd" secondAttribute="trailing" id="CVf-mG-HEy"/>
+                <constraint firstAttribute="bottom" secondItem="c4z-p1-LF6" secondAttribute="bottom" id="EXW-80-XWc"/>
+                <constraint firstItem="c4z-p1-LF6" firstAttribute="leading" secondItem="2Hg-pq-Jrj" secondAttribute="trailing" id="Ggl-MM-COr"/>
+                <constraint firstItem="2Hg-pq-Jrj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HWj-pm-1f2"/>
+                <constraint firstAttribute="bottom" secondItem="8ME-V5-JZd" secondAttribute="bottom" id="N10-Y6-ZNi"/>
+                <constraint firstItem="8ME-V5-JZd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PqU-V5-Gm7"/>
+                <constraint firstAttribute="trailing" secondItem="2Hg-pq-Jrj" secondAttribute="trailing" constant="70" id="TNu-Bn-Xbs"/>
+                <constraint firstItem="c4z-p1-LF6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iKc-Xm-4us"/>
+                <constraint firstAttribute="bottom" secondItem="2Hg-pq-Jrj" secondAttribute="bottom" id="kcu-BH-R5K"/>
+                <constraint firstItem="8ME-V5-JZd" firstAttribute="leading" secondItem="2Hg-pq-Jrj" secondAttribute="trailing" id="spX-hH-yeK"/>
+                <constraint firstItem="2Hg-pq-Jrj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sxX-ap-2sS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="delectBtn" destination="2Hg-pq-Jrj" id="wL4-38-aPm"/>
+                <outlet property="selectAllBtn" destination="c4z-p1-LF6" id="YZA-D7-vrr"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message_btn_check_dis" width="16" height="16"/>
+        <image name="message_btn_check_nor" width="16" height="16"/>
+        <image name="message_ico_trash" width="22" height="22"/>
+    </resources>
+</document>

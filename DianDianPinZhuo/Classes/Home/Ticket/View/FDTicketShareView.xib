@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FDTicketShareView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FDTicketShareView">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="631"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsA-N8-7Qk">
+                    <rect key="frame" x="28" y="149" width="402" height="334"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_img_bg_nor" translatesAutoresizingMaskIntoConstraints="NO" id="Jqj-6h-jjW">
+                            <rect key="frame" x="0.0" y="0.0" width="402" height="84"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="84" id="p0S-1F-nLb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Z1-ti-o2q">
+                            <rect key="frame" x="44" y="214" width="314" height="40"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.18039215689999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="270" id="9wx-oN-UXU"/>
+                                <constraint firstAttribute="height" constant="40" id="IBN-dZ-dp0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="分享给同事">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.93333333333333335" green="0.1803921568627451" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="9wx-oN-UXU"/>
+                                </mask>
+                            </variation>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA2-Qj-xP5">
+                            <rect key="frame" x="44" y="267" width="314" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="270" id="oO2-Ww-ee0"/>
+                                <constraint firstAttribute="height" constant="40" id="sxM-lq-4FO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="我要偷偷吃">
+                                <color key="titleColor" red="0.93333333330000001" green="0.18039215689999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                    <color key="value" red="0.93333333333333335" green="0.1803921568627451" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="oO2-Ww-ee0"/>
+                                </mask>
+                            </variation>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还有7张一元饭票" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-Ck-cHI">
+                            <rect key="frame" x="44" y="94" width="314" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="qTi-5J-Q5F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jqj-6h-jjW" firstAttribute="top" secondItem="UsA-N8-7Qk" secondAttribute="top" id="53K-yw-SFN"/>
+                        <constraint firstItem="hA2-Qj-xP5" firstAttribute="width" secondItem="4Z1-ti-o2q" secondAttribute="width" id="8bX-EI-Q2K"/>
+                        <constraint firstItem="4Z1-ti-o2q" firstAttribute="centerX" secondItem="UsA-N8-7Qk" secondAttribute="centerX" id="9jG-vf-DPP"/>
+                        <constraint firstAttribute="trailing" secondItem="4Z1-ti-o2q" secondAttribute="trailing" constant="44" id="BeU-rm-b3f"/>
+                        <constraint firstItem="4Z1-ti-o2q" firstAttribute="top" secondItem="sw3-Ck-cHI" secondAttribute="bottom" constant="10" id="C1n-ZC-gDB"/>
+                        <constraint firstAttribute="trailing" secondItem="Jqj-6h-jjW" secondAttribute="trailing" id="LDt-47-jpH"/>
+                        <constraint firstItem="sw3-Ck-cHI" firstAttribute="top" secondItem="Jqj-6h-jjW" secondAttribute="bottom" constant="10" id="WcW-wH-8Fc"/>
+                        <constraint firstItem="hA2-Qj-xP5" firstAttribute="centerX" secondItem="UsA-N8-7Qk" secondAttribute="centerX" id="WvS-Ts-a7w"/>
+                        <constraint firstItem="sw3-Ck-cHI" firstAttribute="centerX" secondItem="UsA-N8-7Qk" secondAttribute="centerX" constant="27" id="XYH-lQ-peE"/>
+                        <constraint firstItem="hA2-Qj-xP5" firstAttribute="top" secondItem="4Z1-ti-o2q" secondAttribute="bottom" constant="13" id="Z8s-Es-NRz"/>
+                        <constraint firstItem="Jqj-6h-jjW" firstAttribute="leading" secondItem="UsA-N8-7Qk" secondAttribute="leading" id="ffS-oc-72R"/>
+                        <constraint firstAttribute="trailing" secondItem="sw3-Ck-cHI" secondAttribute="trailing" constant="44" id="g8q-PN-n01"/>
+                        <constraint firstItem="sw3-Ck-cHI" firstAttribute="centerX" secondItem="UsA-N8-7Qk" secondAttribute="centerX" id="hym-73-ixK"/>
+                        <constraint firstItem="4Z1-ti-o2q" firstAttribute="leading" secondItem="UsA-N8-7Qk" secondAttribute="leading" constant="44" id="iNJ-7O-d9Y"/>
+                        <constraint firstAttribute="height" constant="334" id="uQ6-gE-Px4"/>
+                        <constraint firstItem="sw3-Ck-cHI" firstAttribute="leading" secondItem="UsA-N8-7Qk" secondAttribute="leading" constant="44" id="vaW-GO-Wlm"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="XYH-lQ-peE"/>
+                            <exclude reference="hym-73-ixK"/>
+                        </mask>
+                    </variation>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baw_img_egg_nor" translatesAutoresizingMaskIntoConstraints="NO" id="yYd-wu-zGc">
+                    <rect key="frame" x="159" y="91" width="141" height="138"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yYd-wu-zGc" firstAttribute="centerX" secondItem="Jqj-6h-jjW" secondAttribute="centerX" id="3Wl-LI-J8D"/>
+                <constraint firstItem="UsA-N8-7Qk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8lC-pU-RJX"/>
+                <constraint firstItem="UsA-N8-7Qk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="IG7-Sy-YLf"/>
+                <constraint firstItem="UsA-N8-7Qk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="58" id="NfL-uI-3nu"/>
+                <constraint firstAttribute="trailing" secondItem="UsA-N8-7Qk" secondAttribute="trailing" constant="28" id="UOw-dn-Dtd"/>
+                <constraint firstItem="UsA-N8-7Qk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o2N-6x-RIu"/>
+                <constraint firstItem="yYd-wu-zGc" firstAttribute="bottom" secondItem="Jqj-6h-jjW" secondAttribute="bottom" constant="-4" id="vf8-QJ-Xe9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NfL-uI-3nu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancleBtn" destination="hA2-Qj-xP5" id="heG-cO-5Pf"/>
+                <outlet property="circleView" destination="UsA-N8-7Qk" id="Jer-I9-0mv"/>
+                <outlet property="shareBtn" destination="4Z1-ti-o2q" id="pSI-ej-XcY"/>
+                <outlet property="topText" destination="sw3-Ck-cHI" id="98r-AB-jUx"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="229.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baw_img_bg_nor" width="324" height="84"/>
+        <image name="baw_img_egg_nor" width="141" height="138"/>
+    </resources>
+</document>
